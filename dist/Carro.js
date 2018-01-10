@@ -20,3 +20,5 @@ var carroA = new Carro('Rafaela', 3);
 console.log(carroA);
 carroA.acelerar();
 console.log(carroA);
+carroA.acelerar();
+carroA.acelerar();
