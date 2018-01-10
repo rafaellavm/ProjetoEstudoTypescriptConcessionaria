@@ -4,10 +4,10 @@ Projeto simples com aplicação de TypeScript e Orientação a Objetos em JavaSc
 
 ## para iniciar o tscofig.json ##
 
-$` tsc -init `
+` tsc -init `
 
 ## para compilar o typescript ##
 
-$` tsc -w `
+` tsc -w `
 
 
