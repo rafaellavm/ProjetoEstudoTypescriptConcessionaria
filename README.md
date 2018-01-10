@@ -6,4 +6,8 @@ Projeto simples com aplicação de TypeScript e Orientação a Objetos em JavaSc
 
 $` tsc -init `
 
+## para compilar o typescript ##
+
+$` tsc -w `
+
 
