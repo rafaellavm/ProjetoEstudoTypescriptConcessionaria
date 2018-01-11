@@ -28,5 +28,27 @@ var Concessionaria = /** @class */ (function () {
     };
     return Concessionaria;
 }());
-var concessionaria = new Concessionaria('Av. Paulista');
-console.log(concessionaria);
+//let concessionaria = new Concessionaria('Av. Paulista');
+//console.log(concessionaria);
+var Pessoa = /** @class */ (function () {
+    function Pessoa(nome, carroPreferido) {
+        this.carroPreferido = carroPreferido;
+        this.nome = nome;
+    }
+    Pessoa.prototype.dizerNome = function () {
+        return this.nome;
+    };
+    Pessoa.prototype.dizerCarroPreferido = function () {
+        return this.carroPreferido;
+    };
+    Pessoa.prototype.dizerCarroQueTem = function () {
+        this.carro;
+    };
+    Pessoa.prototype.comprarCarro = function (carro) {
+        this.carro = carro;
+    };
+    return Pessoa;
+}());
+var pessoa = new Pessoa('Rafaela', 'Celta');
+console.log(pessoa);
+console.log(pessoa.dizerCarroPreferido());

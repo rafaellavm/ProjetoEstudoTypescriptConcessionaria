@@ -42,5 +42,37 @@ class Concessionaria{
     }
 }
 
-let concessionaria = new Concessionaria('Av. Paulista');
-console.log(concessionaria);
+//let concessionaria = new Concessionaria('Av. Paulista');
+//console.log(concessionaria);
+
+class Pessoa{
+
+    private nome: string;
+    private carroPreferido: string;
+    private carro: any;
+
+    constructor(nome: string, carroPreferido: string){
+        this.carroPreferido = carroPreferido;
+        this.nome = nome;
+    }
+
+    public dizerNome(): string{
+        return this.nome;
+    }
+
+    public dizerCarroPreferido(): string{
+        return this.carroPreferido;
+    }
+
+    public dizerCarroQueTem(): any{
+        this.carro;
+    }
+
+    public comprarCarro(carro: any): void{
+        this.carro = carro;
+    }
+}
+
+let pessoa = new Pessoa('Rafaela', 'Celta');
+console.log(pessoa);
+console.log(pessoa.dizerCarroPreferido());
