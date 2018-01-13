@@ -17,8 +17,9 @@ var Carro = /** @class */ (function () {
     return Carro;
 }());
 var Concessionaria = /** @class */ (function () {
-    function Concessionaria(endereco) {
+    function Concessionaria(endereco, listaDeCarros) {
         this.endereco = endereco;
+        this.listaDeCarros = listaDeCarros;
     }
     Concessionaria.prototype.fornecerEndereco = function () {
         return this.endereco;
@@ -49,6 +50,13 @@ var Pessoa = /** @class */ (function () {
     };
     return Pessoa;
 }());
-var pessoa = new Pessoa('Rafaela', 'Celta');
-console.log(pessoa);
-console.log(pessoa.dizerCarroPreferido());
+/* ------------ criar carros ------------ */
+var carroA = new Carro('dodgey honey', 4);
+var carroB = new Carro('Celta', 4);
+var carroC = new Carro('Palo', 4);
+/* ------------ montar lista de carros da concessionária ------------ */
+var listaDeCarros = [carroA, carroB, carroC];
+//ou let listaDeCarros: Carro[] = [carroA, carroB, carroC];
+var concessionaria = new Concessionaria('Avenida Rio Branco, 156', listaDeCarros);
+/* ------------ exibir a lista de carros  ------------ */
+console.log(concessionaria.mostrarListaDeCarros());
