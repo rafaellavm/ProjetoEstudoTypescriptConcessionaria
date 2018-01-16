@@ -50,7 +50,7 @@ class Pessoa{
 
     private nome: string;
     private carroPreferido: string;
-    private carro: any;
+    private carro: Carro;
 
     constructor(nome: string, carroPreferido: string){
         this.carroPreferido = carroPreferido;
@@ -65,11 +65,11 @@ class Pessoa{
         return this.carroPreferido;
     }
 
-    public dizerCarroQueTem(): any{
-        this.carro;
+    public dizerCarroQueTem(): Carro{
+        return this.carro;
     }
 
-    public comprarCarro(carro: any): void{
+    public comprarCarro(carro: Carro): void{
         this.carro = carro;
     }
 }
@@ -89,4 +89,20 @@ let concessionaria = new Concessionaria('Avenida Rio Branco, 156',listaDeCarros)
 
 /* ------------ exibir a lista de carros  ------------ */
 
-console.log(concessionaria.mostrarListaDeCarros());
+//console.log(concessionaria.mostrarListaDeCarros());
+
+/* ------------ comprar o carro  ------------ */
+
+let cliente = new Pessoa('João', 'Palo');
+//console.log(cliente.dizerCarroPreferido());
+
+//verificar se na lista de carros há o carro preferido do cliente
+//looping dentro de cada posicao do array
+concessionaria.mostrarListaDeCarros().map((carro:Carro) => {
+    //lista os carros
+    if(carro['modelo'] == cliente.dizerCarroPreferido()){
+        cliente.comprarCarro(carro);
+    }
+});
+
+console.log(cliente.dizerCarroQueTem());
