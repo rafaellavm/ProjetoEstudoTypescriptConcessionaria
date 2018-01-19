@@ -1,6 +1,7 @@
-import Carro, {qualquer_coisa as outroNomeVariavel} from './Carro';
+//import Carro, {qualquer_coisa as outroNomeVariavel} from './Carro';
 import Pessoa from './Pessoa';
 import Concessionaria from './Concessionaria';
+import Carro from './Carro';
 
 //let concessionaria = new Concessionaria('Av. Paulista');
 //console.log(concessionaria);

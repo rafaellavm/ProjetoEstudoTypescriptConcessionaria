@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Carro_1 = require("./Carro");
+//import Carro, {qualquer_coisa as outroNomeVariavel} from './Carro';
 var Pessoa_1 = require("./Pessoa");
 var Concessionaria_1 = require("./Concessionaria");
+var Carro_1 = require("./Carro");
 //let concessionaria = new Concessionaria('Av. Paulista');
 //console.log(concessionaria);
 /* ------------ criar carros ------------ */
